@@ -4,5 +4,10 @@
     ["@babel/preset-react", { "runtime": "automatic" }],
     ["@babel/preset-typescript", { "isTSX": true, "allExtensions": true }]
   ],
-  "plugins": [["@babel/plugin-transform-runtime", { "corejs": 3 }]]
+  "plugins": [["@babel/plugin-transform-runtime", { "corejs": 3 }]],
+  "env": {
+    "development": {
+      "plugins": [["babel-plugin-styled-components", { "displayName": true, "fileName": false }]]
+    }
+  }
 }
