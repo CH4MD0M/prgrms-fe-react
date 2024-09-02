@@ -22,12 +22,5 @@ module.exports = merge(common, {
     compress: true,
     port: 3000,
     liveReload: true,
-    /* proxy: {
-      '/api': {
-        target: 'http://localhost:5000',
-        changeOrigin: true,
-        secure: false,
-      },
-    }, */
   },
 });
